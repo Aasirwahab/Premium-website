@@ -532,7 +532,7 @@ h2 {
 
 .solution-row {
   display: grid;
-  grid-template-columns: minmax(92px, 0.14fr) minmax(360px, 0.46fr) minmax(280px, 1fr) auto;
+  grid-template-columns: minmax(92px, 0.14fr) minmax(450px, 0.5fr) minmax(260px, 1fr) auto;
   gap: clamp(18px, 2.4vw, 42px);
   align-items: center;
   min-height: clamp(104px, 8vw, 126px);
@@ -551,8 +551,7 @@ h2 {
 }
 
 .solution-row:hover,
-.solution-row:focus-visible,
-.solution-row.is-featured {
+.solution-row:focus-visible {
   border-color: rgba(156, 236, 255, 0.26);
   background:
     linear-gradient(90deg, rgba(156, 236, 255, 0.95), rgba(238, 250, 255, 0.82));
@@ -562,8 +561,7 @@ h2 {
 }
 
 .solution-row:hover + .solution-row,
-.solution-row:focus-visible + .solution-row,
-.solution-row.is-featured + .solution-row {
+.solution-row:focus-visible + .solution-row {
   border-top-color: transparent;
 }
 
@@ -596,14 +594,12 @@ h2 {
 }
 
 .solution-row:hover .solution-copy,
-.solution-row:focus-visible .solution-copy,
-.solution-row.is-featured .solution-copy {
+.solution-row:focus-visible .solution-copy {
   color: rgba(6, 17, 28, 0.68);
 }
 
 .solution-row:hover .solution-arrow,
-.solution-row:focus-visible .solution-arrow,
-.solution-row.is-featured .solution-arrow {
+.solution-row:focus-visible .solution-arrow {
   transform: translateX(8px);
 }
 
@@ -1238,8 +1234,7 @@ h3 {
   }
 
   .solution-row:hover,
-  .solution-row:focus-visible,
-  .solution-row.is-featured {
+  .solution-row:focus-visible {
     transform: none;
   }
 

@@ -94,7 +94,7 @@ export default function Home() {
 
           <div className="solution-list" aria-label="Polaris research solutions">
             <p className="solution-label">Research systems for</p>
-            <a className="solution-row is-featured" href="#product">
+            <a className="solution-row" href="#product">
               <span className="solution-index">01</span>
               <span className="solution-name">Context Search</span>
               <span className="solution-copy">

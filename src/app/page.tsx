@@ -70,52 +70,70 @@ export default function Home() {
       </section>
 
       <section className="problem-section" aria-labelledby="problem-title">
-        <div className="section-shell problem-grid">
-          <div className="section-kicker">The Research Drift</div>
-          <div>
-            <RevealText as="h2" id="problem-title">
-              The web is full of answers. Not direction.
-            </RevealText>
-            <RevealText as="p" className="section-lede reveal-lede">
-              Tabs multiply. Sources disappear. Notes scatter across tools.
-              Polaris gives your research a memory, a map, and a calmer way to
-              move through information.
-            </RevealText>
+        <div className="section-shell problem-editorial">
+          <div className="problem-intro">
+            <div>
+              <p className="section-kicker">The Research Drift</p>
+              <RevealText as="h2" id="problem-title">
+                Future-proof your research with memory, source trails, and
+                spatial clarity.
+              </RevealText>
+            </div>
+
+            <div className="problem-preview" aria-hidden="true">
+              <div className="preview-card">
+                <span>Live context</span>
+                <strong>18 sources</strong>
+                <p>Mapped across one calm workspace.</p>
+              </div>
+              <div className="preview-orbit" />
+              <div className="preview-node preview-node-a" />
+              <div className="preview-node preview-node-b" />
+            </div>
           </div>
-          <div className="problem-path" aria-label="Common research problems">
-            <svg
-              className="problem-curve"
-              viewBox="0 0 1200 260"
-              preserveAspectRatio="none"
-              aria-hidden="true"
-            >
-              <path
-                className="curve-glow"
-                d="M 0 126 C 150 38, 290 38, 420 118 S 650 190, 782 128 S 990 30, 1200 100"
-              />
-              <path
-                className="curve-line"
-                d="M 0 126 C 150 38, 290 38, 420 118 S 650 190, 782 128 S 990 30, 1200 100"
-              />
-            </svg>
-            <article className="path-point">
-              <span className="path-index">01</span>
-              <span className="path-node" aria-hidden="true" />
-              <h3>Search loses context</h3>
-              <p>Every query starts over, even when your thinking has moved on.</p>
-            </article>
-            <article className="path-point">
-              <span className="path-index">02</span>
-              <span className="path-node" aria-hidden="true" />
-              <h3>Sources go missing</h3>
-              <p>Useful pages vanish into history, bookmarks, and old tabs.</p>
-            </article>
-            <article className="path-point">
-              <span className="path-index">03</span>
-              <span className="path-node" aria-hidden="true" />
-              <h3>Ideas stay scattered</h3>
-              <p>Notes, links, and highlights rarely become a clear path.</p>
-            </article>
+
+          <div className="solution-list" aria-label="Polaris research solutions">
+            <p className="solution-label">Research systems for</p>
+            <a className="solution-row is-featured" href="#product">
+              <span className="solution-index">01</span>
+              <span className="solution-name">Context Search</span>
+              <span className="solution-copy">
+                Ask with your current trail in view, not from a blank page.
+              </span>
+              <span className="solution-arrow" aria-hidden="true">
+                &rarr;
+              </span>
+            </a>
+            <a className="solution-row" href="#memory">
+              <span className="solution-index">02</span>
+              <span className="solution-name">Source Memory</span>
+              <span className="solution-copy">
+                Keep citations, pages, and decisions attached to the work.
+              </span>
+              <span className="solution-arrow" aria-hidden="true">
+                &rarr;
+              </span>
+            </a>
+            <a className="solution-row" href="#spaces">
+              <span className="solution-index">03</span>
+              <span className="solution-name">Spatial Notes</span>
+              <span className="solution-copy">
+                Turn scattered links and highlights into a navigable map.
+              </span>
+              <span className="solution-arrow" aria-hidden="true">
+                &rarr;
+              </span>
+            </a>
+            <a className="solution-row" href="#product">
+              <span className="solution-index">04</span>
+              <span className="solution-name">Team Workspaces</span>
+              <span className="solution-copy">
+                Share research paths without flattening the thinking behind them.
+              </span>
+              <span className="solution-arrow" aria-hidden="true">
+                &rarr;
+              </span>
+            </a>
           </div>
         </div>
       </section>

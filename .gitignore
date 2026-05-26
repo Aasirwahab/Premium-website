@@ -1,0 +1,10 @@
+.next/
+.playwright-mcp/
+node_modules/
+out/
+build/
+dist/
+.env*
+!.env.example
+*.log
+pnpm-debug.log*

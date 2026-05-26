@@ -169,6 +169,78 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <footer className="site-footer" aria-labelledby="footer-title">
+        <div className="footer-orbit" aria-hidden="true" />
+        <div className="section-shell footer-shell">
+          <div className="footer-newsletter">
+            <p className="section-kicker">Field Notes</p>
+            <h2 id="footer-title">Research signals. No drift.</h2>
+            <form className="newsletter-form" aria-label="Subscribe to Polaris updates">
+              <label className="sr-only" htmlFor="newsletter-email">
+                Email address
+              </label>
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="Enter your email"
+                autoComplete="email"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+
+          <div className="footer-panel">
+            <div className="footer-brand">
+              <div className="footer-logo">
+                <span className="footer-mark" aria-hidden="true" />
+                <span>Polaris</span>
+              </div>
+              <p>
+                Polaris helps curious teams search the web, trace sources, and
+                turn scattered research into calm knowledge spaces.
+              </p>
+            </div>
+
+            <nav className="footer-links" aria-label="Footer navigation">
+              <div>
+                <h3>Explore</h3>
+                <a href="#product">Context Search</a>
+                <a href="#memory">Private Memory</a>
+                <a href="#spaces">Spatial Notes</a>
+                <a href="#demo">Demo Library</a>
+              </div>
+              <div>
+                <h3>Workflow</h3>
+                <a href="#product">Source Mapping</a>
+                <a href="#product">Team Spaces</a>
+                <a href="#pricing">Plans</a>
+                <a href="#open">Open Polaris</a>
+              </div>
+              <div>
+                <h3>Company</h3>
+                <a href="#story">Our Story</a>
+                <a href="#journal">Journal</a>
+                <a href="#careers">Careers</a>
+                <a href="#press">Press</a>
+              </div>
+              <div>
+                <h3>Support</h3>
+                <a href="#contact">Contact</a>
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+                <a href="#status">Status</a>
+              </div>
+            </nav>
+
+            <div className="footer-bottom">
+              <span>Designed for research that keeps its shape.</span>
+              <span>© 2026 Polaris Research Browser</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }

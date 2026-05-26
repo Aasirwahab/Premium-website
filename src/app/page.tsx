@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const heroVideo =
   "https://d8j0ntlcm91z4.cloudfront.net/user_30c6yRkxUog0TZ5432rCR7HN4Pe/hf_20260429_034522_e2f81b2d-d670-4124-97eb-6ab3f1b2f379.mp4";
 
@@ -81,19 +83,18 @@ export default function Home() {
             </div>
 
             <div className="problem-preview" aria-hidden="true">
+              <Image
+                src="/images/polaris-research-map.png"
+                alt=""
+                fill
+                sizes="(max-width: 780px) 100vw, 560px"
+                className="problem-preview-image"
+              />
               <div className="preview-card">
                 <span>Live context</span>
                 <strong>18 sources</strong>
                 <p>Mapped across one calm workspace.</p>
               </div>
-              <div className="preview-thread">
-                <span />
-                <span />
-                <span />
-              </div>
-              <div className="preview-orbit" />
-              <div className="preview-node preview-node-a" />
-              <div className="preview-node preview-node-b" />
             </div>
           </div>
 

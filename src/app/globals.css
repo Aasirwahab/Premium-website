@@ -379,28 +379,39 @@ h2 {
 
 .problem-intro {
   display: grid;
-  grid-template-columns: minmax(0, 0.72fr) minmax(280px, 0.28fr);
-  gap: clamp(34px, 6vw, 96px);
+  grid-template-columns: minmax(0, 0.64fr) minmax(340px, 0.36fr);
+  gap: clamp(38px, 5vw, 88px);
   align-items: start;
 }
 
 .problem-section h2 {
-  max-width: 940px;
-  font-size: clamp(48px, 6.2vw, 104px);
-  line-height: 0.94;
+  max-width: 860px;
+  font-size: clamp(52px, 5.25vw, 84px);
+  line-height: 0.96;
+}
+
+.problem-section h2 span {
+  display: block;
+  white-space: nowrap;
 }
 
 .problem-preview {
   position: relative;
-  min-height: 230px;
-  border: 1px solid rgba(238, 250, 255, 0.14);
+  width: min(100%, 520px);
+  min-height: 330px;
+  justify-self: center;
+  margin-top: clamp(6px, 2vw, 28px);
+  border: 1px solid rgba(238, 250, 255, 0.2);
   border-radius: 8px;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(238, 250, 255, 0.11), rgba(238, 250, 255, 0.03)),
-    rgba(8, 22, 34, 0.48);
-  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
-  backdrop-filter: blur(18px);
+    linear-gradient(145deg, rgba(238, 250, 255, 0.13), rgba(238, 250, 255, 0.025)),
+    rgba(7, 20, 31, 0.58);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 34px 100px rgba(0, 0, 0, 0.28),
+    0 0 90px rgba(156, 236, 255, 0.08);
+  backdrop-filter: blur(22px);
 }
 
 .problem-preview::before {
@@ -408,23 +419,28 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 70% 20%, rgba(156, 236, 255, 0.18), transparent 24%),
+    radial-gradient(circle at 72% 18%, rgba(156, 236, 255, 0.24), transparent 25%),
+    radial-gradient(circle at 20% 78%, rgba(164, 144, 255, 0.09), transparent 28%),
     linear-gradient(rgba(238, 250, 255, 0.045) 1px, transparent 1px),
     linear-gradient(90deg, rgba(238, 250, 255, 0.04) 1px, transparent 1px);
-  background-size: auto, 42px 42px, 42px 42px;
+  background-size: auto, auto, 46px 46px, 46px 46px;
   mask-image: radial-gradient(circle at 54% 50%, #000, transparent 74%);
 }
 
 .preview-card {
   position: absolute;
   z-index: 2;
-  right: 18px;
-  bottom: 18px;
-  left: 18px;
-  border: 1px solid rgba(238, 250, 255, 0.14);
+  right: 24px;
+  bottom: 24px;
+  left: 24px;
+  border: 1px solid rgba(238, 250, 255, 0.18);
   border-radius: 8px;
-  padding: 18px;
-  background: rgba(4, 13, 22, 0.64);
+  padding: 24px;
+  background:
+    linear-gradient(180deg, rgba(238, 250, 255, 0.05), rgba(238, 250, 255, 0.015)),
+    rgba(4, 13, 22, 0.72);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+  backdrop-filter: blur(18px);
 }
 
 .preview-card span {
@@ -436,29 +452,69 @@ h2 {
 
 .preview-card strong {
   display: block;
-  margin-top: 12px;
+  margin-top: 14px;
   color: var(--primary-text);
-  font-size: 30px;
+  font-size: clamp(34px, 3.2vw, 50px);
   font-weight: 500;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
 }
 
 .preview-card p {
   margin: 8px 0 0;
   color: rgba(238, 250, 255, 0.62);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
 .preview-orbit {
   position: absolute;
-  top: 26px;
-  left: 28px;
-  width: 138px;
-  height: 138px;
-  border: 1px solid rgba(156, 236, 255, 0.22);
+  top: 34px;
+  left: 52px;
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(156, 236, 255, 0.28);
   border-radius: 999px;
-  box-shadow: 0 0 44px rgba(156, 236, 255, 0.12);
+  box-shadow:
+    inset 0 0 70px rgba(156, 236, 255, 0.035),
+    0 0 58px rgba(156, 236, 255, 0.14);
+}
+
+.preview-thread {
+  position: absolute;
+  top: 82px;
+  right: 48px;
+  left: 116px;
+  height: 90px;
+  opacity: 0.58;
+}
+
+.preview-thread span {
+  position: absolute;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(156, 236, 255, 0.54), transparent);
+  transform-origin: left;
+}
+
+.preview-thread span:nth-child(1) {
+  top: 10px;
+  left: 0;
+  width: 150px;
+  transform: rotate(14deg);
+}
+
+.preview-thread span:nth-child(2) {
+  top: 58px;
+  left: 28px;
+  width: 190px;
+  transform: rotate(-9deg);
+}
+
+.preview-thread span:nth-child(3) {
+  top: 34px;
+  left: 118px;
+  width: 132px;
+  transform: rotate(22deg);
 }
 
 .preview-node {
@@ -472,13 +528,13 @@ h2 {
 }
 
 .preview-node-a {
-  top: 54px;
-  left: 136px;
+  top: 78px;
+  left: 238px;
 }
 
 .preview-node-b {
-  top: 126px;
-  left: 64px;
+  top: 174px;
+  left: 94px;
 }
 
 .section-lede {
@@ -1209,6 +1265,10 @@ h3 {
 
   .problem-preview {
     min-height: 210px;
+  }
+
+  .problem-section h2 span {
+    white-space: normal;
   }
 
   h2 {

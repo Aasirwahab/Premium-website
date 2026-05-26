@@ -1,5 +1,3 @@
-import { RevealText } from "@/components/RevealText";
-
 const heroVideo =
   "https://d8j0ntlcm91z4.cloudfront.net/user_30c6yRkxUog0TZ5432rCR7HN4Pe/hf_20260429_034522_e2f81b2d-d670-4124-97eb-6ab3f1b2f379.mp4";
 
@@ -74,10 +72,12 @@ export default function Home() {
           <div className="problem-intro">
             <div>
               <p className="section-kicker">The Research Drift</p>
-              <RevealText as="h2" id="problem-title">
-                Future-proof your research with memory, source trails, and
-                spatial clarity.
-              </RevealText>
+              <h2 id="problem-title">
+                <span>Future-proof your</span>
+                <span>research with memory,</span>
+                <span>source trails, and</span>
+                <span>spatial clarity.</span>
+              </h2>
             </div>
 
             <div className="problem-preview" aria-hidden="true">
@@ -85,6 +85,11 @@ export default function Home() {
                 <span>Live context</span>
                 <strong>18 sources</strong>
                 <p>Mapped across one calm workspace.</p>
+              </div>
+              <div className="preview-thread">
+                <span />
+                <span />
+                <span />
               </div>
               <div className="preview-orbit" />
               <div className="preview-node preview-node-a" />

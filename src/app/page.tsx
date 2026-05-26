@@ -201,6 +201,11 @@ export default function Home() {
                 Polaris helps curious teams search the web, trace sources, and
                 turn scattered research into calm knowledge spaces.
               </p>
+              <div className="footer-signals" aria-label="Polaris research signals">
+                <span>Context aware</span>
+                <span>Source first</span>
+                <span>Private by design</span>
+              </div>
             </div>
 
             <nav className="footer-links" aria-label="Footer navigation">
@@ -236,6 +241,11 @@ export default function Home() {
 
             <div className="footer-bottom">
               <span>Designed for research that keeps its shape.</span>
+              <div className="footer-social" aria-label="Footer actions">
+                <a href="#journal">Journal</a>
+                <a href="#demo">Demo</a>
+                <a href="#contact">Contact</a>
+              </div>
               <span>© 2026 Polaris Research Browser</span>
             </div>
           </div>
